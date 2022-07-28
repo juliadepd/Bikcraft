@@ -1,1 +1,15 @@
+.header {
+    background-color: #fec630;
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* ou da pra colocar width 100% no lugar do left right 0. Caso contrário, o header sai do 
+    meio e fica fixo no canto*/
+}
 
+.navbar {
+    background-color: blue;
+    text-align: right;
+}
