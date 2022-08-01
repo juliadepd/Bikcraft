@@ -85,6 +85,10 @@ acima indica onde ele ta dentro, abaixo cria uma segunda classe, ou seja vai usa
     color: #fff;
 }
 
+.navbar .ativo {
+    color: white;
+}
+
 .introducao {
     width: 100%;
     height: 380px;
@@ -108,6 +112,24 @@ acima indica onde ele ta dentro, abaixo cria uma segunda classe, ou seja vai usa
     margin-top: 92px;
     height: 160px;
     background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.introducao-interna h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 6px auto 10px auto;
 }
 
 /* porque quando colocava width ele nao consegue mais alinhar com text align?? */
@@ -120,10 +142,11 @@ acima indica onde ele ta dentro, abaixo cria uma segunda classe, ou seja vai usa
 }
 
 .quote-externo p {
-    font-style: italic; 
+    font-style: italic;
 }
 
-.quote-externo p::before, .quote-externo p::after {
+.quote-externo p::before,
+.quote-externo p::after {
     content: "";
     display: block;
     width: 60px;
@@ -145,14 +168,14 @@ h2 {
     font-weight: bold;
     letter-spacing: .1em;
     text-transform: uppercase;
+}
+
+.subtitulo, .subtitulo-interno{
+    margin-bottom: 40px;
     text-align: center;
 }
 
-.subtitulo {
-    margin-bottom: 40px;
-}
-
-.subtitulo::after {
+.subtitulo::after{
     content: "";
     display: block;
     height: 3px;
@@ -161,6 +184,15 @@ h2 {
     margin: 8px auto auto;
 }
 
+.subtitulo-interno::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #000;
+    /* margin: 5px 10px 20px ; */
+    margin: 8px auto;   
+}
 .produtos-lista li {
     background-color: #fec630;
     text-align: center;
@@ -183,6 +215,7 @@ h2 {
     line-height: 25px;
     text-transform: uppercase;
     letter-spacing: .1em;
+    padding-top: 15px;
 }
 
 .produtos-lista li h3::after {
@@ -254,6 +287,8 @@ h2 {
 
 .qualidade-lista {
     padding-top: 40px;
+    overflow: auto;
+    /* ou hidden  */
 }
 
 .qualidade-lista li h3 {
@@ -273,3 +308,79 @@ h2 {
     margin: 6px auto;
 }
 
+.quebra {
+    width: 100%;
+    height: 220px;
+    background-image: url(../assets/5-1-8-footer_arquivos/web/img/bg-footer.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* pode usar background e colocaar tudo nele já (mas tem suas desvantagens), ou fazer separadinho */
+
+.quebra .quote-externo {
+    max-width: 400px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #fec630;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    padding: 25px 0;
+}
+
+.footer h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fec630;
+    margin: 10px 0 12px 0
+}
+
+.footer-historia {
+    padding-right: 40px;
+}
+
+.footer-contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-redes ul li {
+   /* float: left; (da pra fazer com inline block) */
+   display: inline-block;
+   margin-right: 10px;
+
+
+}
+
+.footer-redes ul li a {
+    display: block;
+    border: 3px solid #fec630;
+    padding: 10px;
+}
+
+.footer-redes ul li a:hover {
+  border-color: #fff;
+}
+
+.copy {
+    width: 100%;
+    background-color: #fec630;
+    padding: 20px 0;
+}

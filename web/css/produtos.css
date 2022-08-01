@@ -1,0 +1,29 @@
+
+.interna-produtos {
+    background: url(../assets/5-2-6-produtos_arquivos/web/img/bg-produtos.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.produtos-item {
+    padding: 60px 0 0 0;
+}
+
+.produto-icone {
+    background-color: #000;
+    padding: 70px 0;
+}
+
+.produto-icone img {
+    margin: 0 auto;
+}
+
+.produtos-item h2 {
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: .1em;
+    font-weight: bold;
+    top: -100px;
+    posi
+}
