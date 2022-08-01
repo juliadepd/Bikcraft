@@ -8,6 +8,12 @@ p {
     line-height: 20px;
 }
 
+img {
+    display: block;
+}
+
+/* entenda acima!!  */
+
 .btn {
     border: 3px solid #fec630;
     padding: 10px 30px;
@@ -24,10 +30,30 @@ p {
     color: #fff;
     border-color: #fff;
 }
+
+/* .produtos .call-to-action .btn:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.qualidade .call-to-action .btn:hover {
+    color: #000;
+    border-color: #000;
+} */
+
+/* 2 jeitos possiveis: acima ou abaixo 
+acima indica onde ele ta dentro, abaixo cria uma segunda classe, ou seja vai usar as propriedades da primeira classe mas as da segunda vao sobrepor a proimeira em alguma porpriedade especifica*/
+
+.btn-preto:hover {
+    color: #000;
+    border-color: #000;
+}
+
 .header {
     background-color: #fec630;
     padding: 15px 0;
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -59,14 +85,12 @@ p {
     color: #fff;
 }
 
-
-
 .introducao {
     width: 100%;
     height: 380px;
     background: url("../assets/5-1-4-introducao-home_arquivos/web/img/bg.jpg") no-repeat center;
     background-size: cover;
-    margin-top: 94.67px;
+    margin-top: 92px;
     text-align: center;
 }
 
@@ -77,6 +101,13 @@ p {
     text-transform: uppercase;
     text-align: center;
     padding-top: 120px;
+}
+
+.introducao-interna {
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    background-size: cover;
 }
 
 /* porque quando colocava width ele nao consegue mais alinhar com text align?? */
@@ -117,6 +148,10 @@ h2 {
     text-align: center;
 }
 
+.subtitulo {
+    margin-bottom: 40px;
+}
+
 .subtitulo::after {
     content: "";
     display: block;
@@ -129,7 +164,6 @@ h2 {
 .produtos-lista li {
     background-color: #fec630;
     text-align: center;
-    margin: 50px;
 }
 
 .produtos {
@@ -137,5 +171,105 @@ h2 {
 }
 
 .produtos-lista_img {
-    background-color: #000
+    background-color: #000;
+    text-align: center;
+    align-items: center;
+    padding-left: 15%;
 }
+
+.produtos-lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.produtos-lista li h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #000;
+    margin: 8px auto auto;
+}
+
+.produtos-lista p {
+    padding: 10px 20px 20px 20px;
+}
+
+.call-to-action {
+    padding-top: 40px;
+    text-align: center;
+    clear: both;
+}
+
+.call-to-action p {
+    margin-bottom: 40px;
+}
+
+/* atençãooo coisa nova acima clear both */
+
+.portifolio {
+    width: 100%;
+    background-color: black;
+    padding: 40px 0;
+}
+
+.portiflio .subtitulo {
+    background-color: #fec630;
+}
+
+.portiflio .subtitulo::after {
+    background-color: #fec630;
+}
+
+.portifolio-lista li:last-child {
+    margin-top: 20px;
+}
+
+.portifolio .call-to-action p {
+    color: #fff;
+}
+
+.qualidade {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.qualidade::after {
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../assets/5-1-7-qualidade-home_arquivos/web/img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+}
+
+.qualidade img {
+    margin: 0 auto;
+}
+
+.qualidade-lista {
+    padding-top: 40px;
+}
+
+.qualidade-lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.qualidade-lista li h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color: #000;
+    margin: 6px auto;
+}
+

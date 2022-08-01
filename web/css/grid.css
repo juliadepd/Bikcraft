@@ -52,13 +52,13 @@
 	<div>item 3</div>
 </section> */
 
-.gridlayout {
+/* .gridlayout {
 	width: 960px;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-gap: 20px
-}
+} */
 
 /* no html: 
 
@@ -67,9 +67,9 @@
 	<div>item 2</div> 
 	<div class="div3"> item 3 </div>
 </section> */
-
+/* 
 .div3{
 	grid-column: 2;
 	grid-row: 1;
-}
+} */
 
