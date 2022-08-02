@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bikcraft - Sobre</title>
+    <title>Bikcraft - Contato</title>
     <!-- adicione a linha abaixo manualmente. É a primeira descirção que aparece na busca, embaixo do titulo-->
     <meta name="description" content="">
     <link rel="stylesheet" href="css/normalize.css">
@@ -16,7 +16,7 @@
     </link>
     <link rel="stylesheet" href="css/style.css">
     </link>
-    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/contato.css">
     </link>
 
 
@@ -34,10 +34,10 @@
             <!-- porque tem que ser varias listas com a e nao um alista com varios a -->
             <nav class="grid-12 navbar">
                 <ul>
-                    <li><a href="sobre.html" class="ativo">Sobre</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
                     <li><a href="portifolio.html">Portifólio</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="contato.html" class="ativo">Contato</a></li>
                 </ul>
             </nav>
 
@@ -46,10 +46,10 @@
     </header>
 
 
-    <section class="introducao-interna interna-sobre">
+    <section class="introducao-interna interna-contato">
         <div class="container">
             <h1>
-                Sobre
+                Produtos
             </h1>
             <P>
                 "Conheça mais sobre a Bikecraft"
@@ -58,87 +58,72 @@
 
     </section>
 
-    <section class="missao-sobre container">
-        <div class="grid-10">
 
-            <h2 class="subtitulo-interno">
-                História, Missão e Visão
-            </h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime officia recusandae corrupti nam autem
-                commodi, cum consequatur dolorum blanditiis neque harum dicta id accusamus Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. 
-            </p>
-    
-
-        </div>
-
-        <div class="grid-6">
-
-            <h2 class="subtitulo-interno">
-                Valores
-            </h2>
-
-            <ul>
-                <li>
-                    - Qualidade no processo
-                </li>
-                <li>
-                    - Foco no cliente
-                </li>
-                <li>
-                    - Diversão, preservando o meio ambiente</li>
-                <li>
-                    - Natureza com Sustentabilidadde
-                </li>
-
-            </ul>
-        </div>
-        <div class="grid-16 foto-equipe">
-            <img src="../web/assets/5-1-9-sobre_arquivos/web/img/equipe-bikcraft.jpg" alt="Equipe Bikraft">
-        </div>
-    </section>
-
-    <section class="qualidade container">
+    <section class="contato container">
 
         <h2 class="subtitulo">
-            Qualidade
+            Orçamento
         </h2>
-        <img src="../web/assets/5-1-7-qualidade-home_arquivos/web/img/bikcraft-qualidade.svg" alt="Bikecraft">
+        <form id="contato-form" class="grid-8">
 
-        <ul class="qualidade-lista">
-            <li class="grid-1-3">
-                <h3>
-                    Durabilidade
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid velit reprehenderit incidunt
-                    asperiores temporibus ullam
-                </p>
-            </li>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
 
-            <li class="grid-1-3">
-                <h3>
-                    Design
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid velit reprehenderit incidunt
-                    asperiores temporibus ullam
-                </p>
-            </li>
+            <label for="email">E-mail</label>
+            <input type="text" id="email">
 
-            <li class="grid-1-3">
-                <h3>
-                    Sustentabilidadde
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid velit reprehenderit incidunt
-                    asperiores temporibus ullam
-                </p>
-            </li>
-        </ul>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone">
+
+            <label for="espec">Especificações</label>
+            <textarea type="text" id="espec"></textarea>
+
+            <button class="btn" type="submit">Enviar</button>
+
+        </form>
+
+        <div class="contato-dados grid-8">
+            <h3>
+                Dados
+            </h3>
+            
+            <span>
+                +55 21 93223323
+            </span>
+            <span>
+                orçamento@bikcraft.com
+            </span>
+            <span>
+                Rua Ali Perto - Botafogo
+            </span>
+            <span>
+                Rio de Janeiro - Brasil
+            </span>
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li>
+                    <a href="http://facebook.com" target="_blank">
+                        <img src="assets/5-1-8-footer_arquivos/web/img/redes-sociais/facebook.svg" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://facebook.com" target="_blank">
+                        <img src="assets/5-1-8-footer_arquivos/web/img/redes-sociais/instagram.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://facebook.com" target="_blank">
+                        <img src="assets/5-1-8-footer_arquivos/web/img/redes-sociais/twitter.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
 
     </section>
+
 
     <section class="quebra">
 
