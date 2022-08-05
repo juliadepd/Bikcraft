@@ -110,3 +110,7 @@ form button {
  .contato-dados span:nth-of-type(even) {
     margin-bottom: 40px;
  }
+
+ .contato-mapa {
+    padding-bottom: 60px;
+ }
