@@ -30,17 +30,15 @@
 
   .produto-info ul li:nth-child(even) {
     margin-left: 0px;
-}
+  }
+
   .produto-info ul li:nth-child(1) {
     margin-top: 2px;
-}
-  .produto-info ul li {
-    width: 100%;
-    margin-bottom: 2px;
   }
 
   .produto-info ul li {
     width: 100%;
+    margin-bottom: 2px;
   }
 
 
@@ -101,6 +99,7 @@
     font-size: 14px;
     line-height: 25px;
   }
+
   .qualidade::after {
     content: "";
     width: 634px;
@@ -127,4 +126,26 @@
   .produtos-item h2 {
     top: -100px;
   }
+
+  .produto-info {
+    padding-bottom: 200px
+  }
+
+  .produto-info p{
+    padding-bottom: 230px
+  }
+
+  .produto-info ul li:nth-child(even) {
+    margin-left: 0px;
+  }
+
+  .produto-info ul li:nth-child(1) {
+    margin-top: 2px;
+  }
+
+  .produto-info ul li {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
 }
