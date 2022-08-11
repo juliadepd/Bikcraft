@@ -88,8 +88,6 @@ form button {
     /* float: left; (da pra fazer com inline block) */
     display: inline-block;
     margin-right: 10px;
- 
- 
  }
  
  .contato-dados ul li a {
@@ -110,3 +108,5 @@ form button {
  .contato-dados span:nth-of-type(even) {
     margin-bottom: 40px;
  }
+
+ 
