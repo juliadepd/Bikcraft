@@ -8,20 +8,8 @@
     <title>Bikcraft - Portifolio</title>
     <!-- adicione a linha abaixo manualmente. É a primeira descirção que aparece na busca, embaixo do titulo-->
     <meta name="description" content="">
-    <link rel="stylesheet" href="css/normalize.css">
-    </link>
-    <link rel="stylesheet" href="css/reset.css">
-    </link>
-    <link rel="stylesheet" href="css/grid.css">
-    </link>
+
     <link rel="stylesheet" href="css/style.css">
-    </link>
-    <link rel="stylesheet" href="css/portifolio.css">
-    </link>
-    <link rel="stylesheet" href="css/responsivo.css">
-</link>
-
-
 
 </head>
 
@@ -61,18 +49,45 @@
         </div>
     </section>
 
+    <!-- esta normal ate agora, mas vou copiar esse quote  vezes para fazer a animação -->
 
     <section class="container">
         <blockquote class="quote-clientes">
-            <p>
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero sed cupiditate! Libero quibusdam quis est fugiat 
-possimus"
+            <p data-anime="500" class="fadeInDown">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero sed cupiditate! Libero
+                quibusdam quis est fugiat
+                possimua"
             </p>
             <cite>
                 Barbara Moss
             </cite>
         </blockquote>
+
+        <blockquote class="quote-clientes" class="fadeInRight">
+            <p data-anime="600">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero sed cupiditate! Libero
+                quibusdam quis est fugiat
+                possimub"
+            </p>
+            <cite>
+                Julia Duran
+            </cite>
+        </blockquote>
+
+        <blockquote class="quote-clientes" class="fadeInDown">
+            <p data-anime="700">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate libero sed cupiditate! Libero
+                quibusdam quis est fugiat
+                possimuc"
+            </p>
+            <cite>
+                Weverton Pereira
+            </cite>
+        </blockquote>
     </section>
+
+
+
     <section class="portifolio">
         <div class="container">
 
@@ -163,3 +178,6 @@ possimus"
 </body>
 
 </html>
+
+<script src="js/simple-anime.js"></script>
+<script src="js/script.js"></script>
